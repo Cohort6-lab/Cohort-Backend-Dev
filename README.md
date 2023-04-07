@@ -99,7 +99,7 @@ Add additional notes about how to deploy this on a live system.
 ## ✍️ Authors <a name = "authors"></a>
 
 - [Obed C Innocent](https://github.com/obed4life) - Project Manager
-- [Collins Oden](https://github.com/collinsoden) - Backend Engineer
+- [Collins Oden](https://github.com/collinsoden22) - Backend Engineer
 
 See also the list of [contributors](https://github.com/Cohort6-lab/Cohort-Backend-Dev/contributors) who participated in this project.
 
