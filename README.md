@@ -93,8 +93,8 @@ Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [PHP](https://www.php.net/) - Database
-- [MySQL](https://mysql.com/) - Server Framework
+- [PHP](https://www.php.net/) - Backend
+- [Python](https://python.org/) - Backend
 
 ## ✍️ Authors <a name = "authors"></a>
 
