@@ -24,6 +24,7 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
+- [Guidelines](#guidelines)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
@@ -33,6 +34,17 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
+This is the backend repo for cohort 6 App. 
+
+## 🏁 Guidelines <a name = "getting_started"></a>
+- Follow the coding standards and best practices established for the project.
+- Write clean, maintainable, and efficient code.
+- Use version control effectively and commit your changes regularly.
+- Document your code, including comments and inline documentation, to make it easy for others to understand.
+- Test your code thoroughly to ensure it functions correctly and handles edge cases.
+- Keep sensitive information, such as credentials, secure and do not commit them to the repository.
+- Collaborate with your team members and communicate any issues, challenges, or progress updates regularly.
+- Reach out to the PM if you are not sure of what to do.
 
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
@@ -62,6 +74,8 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo.
+
+
 
 ## 🔧 Running the tests <a name = "tests"></a>
 
