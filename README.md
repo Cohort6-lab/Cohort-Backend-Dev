@@ -25,6 +25,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Guidelines](#guidelines)
+- [Contributing](#contributing)
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
@@ -46,6 +47,12 @@ This is the backend repo for cohort 6 App.
 - Collaborate with your team members and communicate any issues, challenges, or progress updates regularly.
 - Reach out to the PM if you are not sure of what to do.
 
+## 🏁 Contributing to Cohort Backend <a name = "contributing"></a>
+To contribute to Cohort Backend, follow the steps below:
+- ``` Git clone ``` repository
+- Effect your change
+- Commit your changes, create a branch with ```git switch -c { yourname } ```
+- ``` git push ``` to your branch and on github, create a pull request, the admins will review your PR and approve.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
