@@ -1,50 +1,13 @@
 <?php
 // server.php
 
-$host = '127.0.0.1';
-$port = 3000;
-$workers = 4; // number of child processes to create
+// Setin the document root to the build directory
+$SERVER['DOCUMENT_ROOT'] = __DIR_ . '/Cohort-Front-End-Dev/build';
 
-// create child processes
-for ($i = 0; $i < $workers; $i++) {
-    $pid = pcntl_fork();
-    if ($pid == -1) {
-        die('Could not fork');
-    } elseif ($pid) {
-        // parent process
-        continue;
-    } else {
-        // child process
-        $socket = stream_socket_server("tcp://$host:$port", $errno, $errstr);
-        if (!$socket) {
-            die("$errstr ($errno)");
-        }
-        echo "Listening on http://$host:$port\n";
-        while (true) {
-            $client = stream_socket_accept($socket, -1);
-            if ($client) {
-                handle_request($client);
-                fclose($client);
-            }
-        }
-        exit();
-    }
+// Serve the requested file if it exists, otherwise serve the index.html file
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . $_SERVER['REQUEST_URI'])) {
+    return false;
+} else {
+    include_once($_SERVER['DOCUMENT_ROOT'] . '/index.html');
 }
-
-// parent process
-while (pcntl_waitpid(0, $status) != -1) {
-    $status = pcntl_wexitstatus($status);
-    echo "Child process $status exited\n";
-}
-
-function handle_request($client) {
-    $request = '';
-    while (($line = fgets($client)) !== false) {
-        if ($line == "\r\n") {
-            break;
-        }
-        $request .= $line;
-    }
-    $response = "HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nHello, world!\n";
-    fwrite($client, $response);
-}
+?>
