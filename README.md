@@ -35,7 +35,7 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-This is the backend repo for cohort 6 App. 
+This is the backend repo for cohort 6 App.
 
 ## 🏁 Guidelines <a name = "getting_started"></a>
 - Follow the coding standards and best practices established for the project.
